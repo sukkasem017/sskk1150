@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - สุขเกษม (โบ๊ท)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #007bff, #00d2ff);
+            height: 140px;
+            position: relative;
+        }
+
+        .profile-img-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            position: relative;
+            top: -60px;
+            margin-bottom: -50px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            object-fit: cover;
+            background-color: #e0e0e0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-body {
+            padding: 25px 30px 35px 30px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .nickname {
+            font-size: 16px;
+            color: #007bff;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .info-group {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item i {
+            width: 30px;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .info-item span.label {
+            color: #6c757d;
+            width: 110px;
+            font-weight: 300;
+        }
+
+        .info-item span.value {
+            color: #333;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f4f8;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .social-icon:hover {
+            background: #007bff;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-header"></div>
+        
+        <div class="profile-img-container">
+            <!-- เปลี่ยน URL รูปภาพด้านล่างเป็นรูปของคุณได้เลย -->
+            <img src="img/1150.jpg" alt="รูปโปรไฟล์" class="profile-img">
+        </div>
+
+        <div class="profile-body">
+            <h1 class="name">สุขเกษม</h1>
+            <div class="nickname">ชื่อเล่น: โบ๊ท</div>
+
+            <div class="info-group">
+                <div class="info-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span class="label">แผนกวิชา:</span>
+                    <span class="value">คอมพิวเตอร์</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <span class="label">สาขาวิชา:</span>
+                    <span class="value">เทคโนโลยีสารสนเทศ</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="label">อีเมล:</span>
+                    <span class="value">sukkasem.b@example.com</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon" title="Line"><i class="fab fa-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
